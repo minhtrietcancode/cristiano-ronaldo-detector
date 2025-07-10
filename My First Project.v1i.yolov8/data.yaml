@@ -1,6 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: ../train_test_data/train/images
+val: ../train_test_data/test_data
+test: ../train_test_data/test_data
 
 nc: 1
 names: ['ronaldo']
