@@ -10,5 +10,8 @@ data_yaml_path = '../My First Project.v1i.yolov8/data.yaml'
 # You can adjust epochs, image size (imgsz), and other parameters as needed
 results = model.train(data=data_yaml_path, epochs=100, imgsz=640)
 
+# Perform inference on the test set and save results with bounding boxes
+inference_results = model.predict(source='../train_test_data/test_data', save=True, conf=0.25)
+
 # You can optionally save the trained model
-# model.save('my_finetuned_yolov8.pt') 
+model.save('my_finetuned_yolov8.pt') 
