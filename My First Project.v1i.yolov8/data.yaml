@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['ronaldo']
+
+roboflow:
+  workspace: minhtriet
+  project: my-first-project-tvwj0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/minhtriet/my-first-project-tvwj0/dataset/1
